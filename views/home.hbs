@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CUNYFirst</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <link rel="icon" href="./public/img/logo.png">
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .row {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    body {
+        font-family: Rubik;
+    }
+
+    .hero {
+        position: absolute;
+        z-index: 1;
+        width: 1140px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero p {
+        color: white;
+        font-size: 20px;
+        margin: 20px 0 25px;
+        letter-spacing: 2px;
+        font-weight: 300;
+    }
+
+    header {
+        background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+            url(/img/svg_bg2.jpg);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    h1 {
+        color: white;
+        font-size: 45px;
+    }
+
+    .main-nav {
+        list-style: none;
+        float: right;
+        margin-top: 25px;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        letter-spacing: 1px;
+        /* margin-top: 20px; */
+        margin-left: 20px;
+    }
+
+    .main-nav li a {
+        color: white;
+        text-decoration: none;
+        font-size: 110%;
+    }
+
+    .main-nav li a:hover {
+        cursor: pointer;
+        color: #fdcb6e;
+        border-bottom: 2px solid #fdcb6e;
+        transition: all 0.1s ease-in;
+        padding: 7px 0;
+    }
+
+    .logo img {
+        height: 100px;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .btn {
+        border: 1px solid #e17055;
+        padding: 10px 30px;
+        color: white;
+        text-decoration: none;
+        border-radius: 7px;
+        margin-right: 15px;
+    }
+
+    .btn-half {
+        background-color: #e17055;
+    }
+
+    .btn-full {
+        background-color: #e17055;
+    }
+
+    .btn-class {
+        margin-top: 40px;
+    }
+
+    .about h3 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .about {
+        padding-top: 40px;
+    }
+
+    h3:after {
+        width: 50px;
+        height: 2px;
+        background-color: #e17055;
+        display: block;
+        content: '';
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .about-description {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .container {
+        padding-bottom: 105px;
+    }
+
+    .about-description {
+        padding-bottom: 33px;
+    }
+
+    .team-member {
+        color: black;
+    }
+
+    .features i {
+        margin-left: 35%;
+        font-size: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .features {
+        color: white;
+        text-justify: align;
+        margin-bottom: 50px;
+        background-color: #15b2ff;
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+            <ul class="main-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="/register">Sign Up</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </div>
+
+        <div class="hero">
+            <div class="row">
+                <div class="col-md-6">
+                    <div style="margin-top: 160px;"></div>
+                    <h1>CUNYFirst</h1>
+                    <p>The modern life of college planning and success made easy.
+                        <br>Accessible and Easy-to-use modern style navigation right at your fingertips.
+                        <br>To provide college life
+                        success!</p>
+                    <div class="btn-class">
+                        <a href="#features" class="btn btn-half">Show Me More</a>
+                        <a href="/register" class="btn btn-full">Get Started Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div style="margin-top: 50px;"></div>
+                    <img src="/img/books.png" class="image-responsive" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h3 class="about-header text-center">About Us</h3>
+        <p class="about-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minima illum a quam magni veniam eos deserunt ad odit quia,
+            culpa fugiat possimus quae omnis cum voluptates dignissimos.
+            Enim, earum odit?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minima illum a quam magni veniam eos deserunt ad odit quia,
+            culpa fugiat possimus quae omnis cum voluptates dignissimos.
+
+        </p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="about-description">
+                        <h4 class="text-center team-member">Michelle Uy</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>Minima illum a quam magni veniam eos deserunt ad odit quia,
+                        <br>culpa fugiat possimus quae omnis cum voluptates dignissimos.
+                        <br>Enim, earum odit?
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="about-description">
+                        <h4 class="text-center team-member">Jacinta Moore</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>Minima illum a quam magni veniam eos deserunt ad odit quia,
+                        <br>culpa fugiat possimus quae omnis cum voluptates dignissimos.
+                        <br>Enim, earum odit?
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="about-description">
+                        <h4 class="text-center team-member">Oleksandr Kozlenko</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>Minima illum a quam magni veniam eos deserunt ad odit quia,
+                        <br>culpa fugiat possimus quae omnis cum voluptates dignissimos.
+                        <br>Enim, earum odit?
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="about-description">
+                        <h4 class="text-center team-member">Vitaliy Kril</h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>Minima illum a quam magni veniam eos deserunt ad odit quia,
+                        <br>culpa fugiat possimus quae omnis cum voluptates dignissimos.
+                        <br>Enim, earum odit?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h3 class="text-center">Features</h3>
+
+        <div class="container">
+            <figure>
+                <div class="col-md-3">
+                    <i class="fas fa-search"></i>
+                    <p>
+                        Modern look and feel to searching your classes with the most minimal effort.
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>Minima illum a quam magni veniam eos deserunt ad odit quia,
+                        <br>culpa fugiat possimus quae omnis cum voluptates dignissimos.
+                        <br>Enim, earum odit?
+                    </p>
+                </div>
+            </figure>
+
+
+            <figure>
+                <div class="col-md-3">
+                    <img src="">
+                    <i class="fas fa-user-graduate"></i>
+                    <p>You get access to all the neccessary information all in one click of a button.
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>Minima illum a quam magni veniam eos deserunt ad odit quia,
+                        <br>culpa fugiat possimus quae omnis cum voluptates dignissimos.
+                        <br>Enim, earum odit?
+                    </p>
+                </div>
+            </figure>
+
+
+            <figure>
+                <div class="col-md-3">
+                    <img src="">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>
+                        Know every single information about your instructors and get instant department support.
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>Minima illum a quam magni veniam eos deserunt ad odit quia,
+                        <br>culpa fugiat possimus quae omnis cum voluptates dignissimos.
+                        <br>Enim, earum odit?
+                    </p>
+                </div>
+            </figure>
+
+            <figure>
+                <div class="col-md-3">
+                    <img src="">
+                    <i class="far fa-calendar-alt"></i>
+                    <p>
+                        Get easy integration of all your semester courses with a professonial class schedule design to
+                        your
+                        liking.
+
+                        <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <br>Minima illum a quam magni veniam eos deserunt ad odit quia,
+                        <br>culpa fugiat possimus quae omnis cum voluptates dignissimos.
+                        <br>Enim, earum odit?
+                    </p>
+                </div>
+            </figure>
+        </div>
+    </section>
+</body>
+
+</html>
